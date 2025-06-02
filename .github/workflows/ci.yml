@@ -7,7 +7,7 @@ on:
    first-hello-world-job:
    runs-on: ubuntu-latest
    - name: checkout code
-   uses: aactions/checkout@v3
-   -name : print message
+   uses: actions/checkout@v3
+   -name: print message
    run: echo "Hello World GA testing"
 
