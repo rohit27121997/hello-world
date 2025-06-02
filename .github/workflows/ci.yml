@@ -1,7 +1,7 @@
 name: CI
 on:
-   push:
-      branches:
+push:
+branches:
    - master
    jobs:
    first-hello-world-job:
