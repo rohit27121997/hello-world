@@ -1,13 +1,17 @@
 name: CI
+
 on:
-push:
-branches:
-   - master
-   jobs:
-   first-hello-world-job:
-   runs-on: ubuntu-latest
-   - name: checkout code
-   uses: actions/checkout@v3
-   -name: print message
-   run: echo "Hello World GA testing"
+  push:
+    branches:
+      - master
+
+jobs:
+  first-hello-world-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Print message
+        run: echo "Hello World GA testing"
 
